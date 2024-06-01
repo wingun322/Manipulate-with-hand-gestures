@@ -169,22 +169,22 @@ def main():
                        last_mouse_event_time = current_time
                     # 3번째 동작일 때 (홈 화면으로 이동)
                     elif hand_sign_id == 2:
-                       #pyautogui.hotkey('win', 'd')
+                       pyautogui.hotkey('win', 'd')
                        last_mouse_event_time = current_time
                     # 9번째 동작일 때
                     elif hand_sign_id == 8:
                         # 마우스 클릭 이벤트 발생
-                        #pyautogui.hotkey('alt', 'f4')
+                        pyautogui.hotkey('alt', 'f4')
                         last_mouse_event_time = current_time
                     # 7번째 동작일 때 (Alt + Tab)
                     elif hand_sign_id == 6:
                        # Alt + Tab 키 누르기 (창 전환)
-                       #pyautogui.hotkey('alt', 'tab')
+                       pyautogui.hotkey('alt', 'tab')
                        last_mouse_event_time = current_time 
                        
                 # 2번째 동작이 감지되면 마우스 클릭
                 if hand_sign_id == 1:
-                    #pyautogui.click()
+                    pyautogui.click()
                     last_mouse_event_time = current_time                 
     
         
